@@ -1,6 +1,5 @@
--create mockaroo schema
--set up mockaroo API
--write data retrieval script
+-create proper mockaroo schema
+-set up proper mockaroo API
 -set styles
 -format data
 -make charts

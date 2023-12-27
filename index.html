@@ -13,4 +13,51 @@
             <li>Krzysztof Żyła</li>
         </ul></h2>
     </header>
+
+    <button id="downloadButton" onclick="removeTable('tableData');postData()">Download data</button>
+
+    <div id="data"></div>
+
+    <script>
+        function removeTable(id)
+        {
+            var table = document.getElementById(id);
+            if(table){
+                document.getElementById(id).remove();
+            }
+        }
+        
+        async function postData() {
+            const response = await fetch("https://my.api.mockaroo.com/mock_edi.json?key=e4624000");
+            const dataSet = await response.json();
+            console.log(dataSet);
+
+            let table = document.createElement("table");
+            table.id = "tableData"
+            let columns = Object.keys(dataSet[0])
+            let thead = document.createElement("thead");
+            let tr = document.createElement("tr");
+            
+            columns.forEach((item) => {
+                let th = document.createElement("th");
+                th.innerText = item;
+                tr.appendChild(th);
+            });
+            thead.appendChild(tr);
+            table.append(tr);
+            
+            dataSet.forEach((item) => {
+                let tr = document.createElement("tr");
+                let vals = Object.values(item);
+            
+            vals.forEach((elem) => {
+               let td = document.createElement("td");
+               td.innerText = elem;
+               tr.appendChild(td);
+            });
+            table.appendChild(tr);
+         });
+         data.appendChild(table)
+        }
+    </script>
 </body>
