@@ -1,6 +1,5 @@
 -create mockaroo schema
 -set up mockaroo API
--write skeleton index.html
 -write data retrieval script
 -set styles
 -format data
