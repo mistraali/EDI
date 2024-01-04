@@ -1,5 +1,3 @@
--create proper mockaroo schema
--set up proper mockaroo API
 -set styles
 -format data
 -make charts
