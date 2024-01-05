@@ -1,3 +1,0 @@
--set styles
--format data
--make charts

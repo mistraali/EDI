@@ -1,21 +1,13 @@
 //Checks and clears previous data.
-function removeTable(id) {
+function removeTable(id){
     var table = document.getElementById(id);
     if(table) {
         document.getElementById(id).remove();
     }
 }
 
-//Fetching data and creating an array.
-async function postData() {
-    //Replace fetch() argument if you want to change data generator.
-    const response = await fetch("https://my.api.mockaroo.com/edi.json?key=e4624000");
-    const dataSet = await response.json();
-    
-    //Uncomment to send data to console.
-    //console.log(dataSet);
-
-    //Array creation
+//Creating Array
+function createTable(dataSet){
     let table = document.createElement("table");
     table.id = "tableData"
     let columns = Object.keys(dataSet[0])
