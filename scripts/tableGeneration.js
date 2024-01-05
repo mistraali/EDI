@@ -16,7 +16,7 @@ function createTable(dataSet){
     
     columns.forEach((item) => {
         let th = document.createElement("th");
-        th.innerText = item;
+        th.innerText = item.replace('_',' ');
         tr.appendChild(th);
         });
     thead.appendChild(tr);
@@ -33,7 +33,7 @@ function createTable(dataSet){
         });
         table.appendChild(tr);
     });
-
+    
     //Appending table to document.
     data.appendChild(table)
 }
