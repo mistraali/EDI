@@ -23,11 +23,23 @@ export function chartOne(dataSet){
     data: {
       labels: Object.keys(oscars),
       datasets: [{
-        label: 'Number of Academy Awards per actor',
+        label: 'Number of actors',
         data: Object.values(oscars),
         hoverOffset: 60
       }]
     },
+    options: {
+      plugins: {
+          title: {
+              display: true,
+              text: 'Disposition of Academy Awards',
+              padding: 10,
+              font: {
+                size: 30,
+              }
+          }
+      }
+  }
   });
 
 }
