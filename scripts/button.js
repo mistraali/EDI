@@ -1,7 +1,7 @@
 import "./tableGeneration.js"
 import {createCharts, removeCharts} from "./chartGeneration.js"
 
-//Fetching and processing data.
+//Fetching and processing.
 async function postData(){
     //Replace fetch() argument if you want to change data generator.
     const response = await fetch("https://my.api.mockaroo.com/edi.json?key=e4624000");
