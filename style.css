@@ -3,12 +3,24 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    width: 70vw;
 }
 
 header {
+    width: 70vw;
+    transform: translateY(-5px);
     background: linear-gradient(#1a1a1a, #333);
     color: white;
     padding: 20px;
+    border-radius: 5px;
 }
 
 h1 {
@@ -21,10 +33,6 @@ ul {
     margin: 10px 0;
 }
 
-li {
-    display: inline;
-    margin-right: 20px;
-}
 
 table {
     width: 100%;
@@ -115,4 +123,37 @@ button:hover {
 #goToBottom {
     bottom: 20px;
     right: 20px;
+}
+
+
+#header-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text-obj {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    header {
+        width: 90vw;
+    }
+    div {
+        width: 90vw;
+    }
+    #header-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .header-obj {
+        margin: 5px;
+        text-align: center;
+    }
+    table {
+        width: auto;
+        font-size: 12px;
+    }
 }

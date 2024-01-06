@@ -1,4 +1,5 @@
 import { chartOne } from "./chartOne.js";
+import { chartTwo } from "./chartTwo.js";
 
 //Checks and clears previous data.
 export function removeCharts(id1,id2){
@@ -27,6 +28,6 @@ export function createCharts(dataSet) {
     let chart2 = document.createElement("canvas");
     chart2.id = "chart2";
     chart.appendChild(chart2);
-    //chartTwo(dataSet);
+    chartTwo(dataSet);
     chart2.style.display = "none";
 }
