@@ -1,5 +1,5 @@
 //Checks and clears previous data.
-function removeTable(id){
+export function removeTable(id){
     var table = document.getElementById(id);
     if(table) {
         document.getElementById(id).remove();
@@ -7,7 +7,7 @@ function removeTable(id){
 }
 
 //Creating Array
-function createTable(dataSet){
+export function createTable(dataSet){
     let table = document.createElement("table");
     table.id = "tableData"
     let columns = Object.keys(dataSet[0])

@@ -55,6 +55,10 @@ tr:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+#dataDesc h3 {
+    text-align: center;
+}
+
 button {
     display: block;
     background-color: #4CAF50;
@@ -84,4 +88,22 @@ button:hover {
     margin: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#charts h3 {
+    text-align: center;
+}
+
+.navButton {
+    position: fixed;
+}
+
+#goToTop {
+    bottom: 80px;
+    right: 20px;
+}
+
+#goToBottom {
+    bottom: 20px;
+    right: 20px;
 }

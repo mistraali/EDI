@@ -1,4 +1,4 @@
-import "./tableGeneration.js"
+import {createTable, removeTable} from "./tableGeneration.mjs"
 import {createCharts, removeCharts} from "./chartGeneration.js"
 
 //Fetching and processing.
