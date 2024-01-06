@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <head>
     <title>EDI project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="container">
     <header>
         <h1>EDI project</h1>
         <h2><ul>
@@ -35,7 +39,12 @@
         <p>
             For the data fetched with the "Download data" button we prepared two types of charts. Each button displays one chart at a time. 
         </p>
+        <ul id="chartPages" class="pagination">
+            <li><a href="#charts" onclick="showChart(1)">1</a></li>
+            <li><a href="#charts" onclick="showChart(2)">2</a></li>
+          </ul>
     </div>
+    <script src="scripts/switchChart.js"></script>
     
     <button id="goToTop" class="navButton" onclick="goToTop()">Go to top</button>
     <button id="goToBottom" class="navButton" onclick="goToBottom()">Go to bottom</button>

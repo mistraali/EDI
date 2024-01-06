@@ -94,6 +94,15 @@ button:hover {
     text-align: center;
 }
 
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+  
+.pagination li {
+    display: block;
+}
+
 .navButton {
     position: fixed;
 }

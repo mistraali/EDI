@@ -21,10 +21,12 @@ export function createCharts(dataSet) {
     chart1.id = "chart1";
     chart.appendChild(chart1);
     chartOne(dataSet);
+    chart1.style.display = "none";
 
 
     let chart2 = document.createElement("canvas");
     chart2.id = "chart2";
     chart.appendChild(chart2);
-
+    //chartTwo(dataSet);
+    chart2.style.display = "none";
 }
