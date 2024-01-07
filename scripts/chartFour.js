@@ -30,6 +30,7 @@ export function chartFour(dataSet){
     },
     options: {
       plugins: {
+          legend: false,
           title: {
               display: true,
               text: 'Number of Oscars by Nationality',
@@ -38,6 +39,7 @@ export function chartFour(dataSet){
                 size: 30,
               }
           }
+          
       }
   }
   });
