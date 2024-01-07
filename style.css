@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    padding-bottom: 50px;
     background-color: #f2f2f2;
     scroll-behavior: smooth;
     display: flex;
@@ -113,18 +114,23 @@ button:hover {
 
 .navButton {
     position: fixed;
+    width: 20px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
 }
 
 #goToTop {
-    bottom: 80px;
-    right: 20px;
+    bottom: 0px;
+    right: 70px;
 }
 
 #goToBottom {
-    bottom: 20px;
+    bottom: 0px;
     right: 20px;
 }
-
 
 #header-list {
     display: flex;
