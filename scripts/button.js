@@ -12,7 +12,7 @@ async function postData(){
 
     removeTable("tableData");
     createTable(dataSet);
-    removeCharts("chart1","chart2");
+    removeCharts("chart1","chart2","chart3");
     createCharts(dataSet);
 }
 

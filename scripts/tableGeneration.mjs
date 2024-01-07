@@ -35,5 +35,6 @@ export function createTable(dataSet){
     });
     
     //Appending table to document.
+    document.getElementById("data").style.display = "block"
     data.appendChild(table)
 }

@@ -1,8 +1,9 @@
 import { chartOne } from "./chartOne.js";
 import { chartTwo } from "./chartTwo.js";
+import { chartThree } from "./chartThree.js";
 
 //Checks and clears previous data.
-export function removeCharts(id1,id2){
+export function removeCharts(id1,id2,id3){
     var chart1 = document.getElementById(id1);
     if(chart1) {
         document.getElementById(id1).remove();
@@ -11,6 +12,11 @@ export function removeCharts(id1,id2){
     var chart2 = document.getElementById(id2);
     if(chart2) {
         document.getElementById(id2).remove();
+    }
+
+    var chart3 = document.getElementById(id3);
+    if(chart3) {
+        document.getElementById(id3).remove();
     }
 }
 
@@ -30,4 +36,10 @@ export function createCharts(dataSet) {
     chart.appendChild(chart2);
     chartTwo(dataSet);
     chart2.style.display = "none";
+
+    let chart3 = document.createElement("canvas");
+    chart3.id = "chart3";
+    chart.appendChild(chart3);
+    chartThree(dataSet);
+    chart3.style.display = "none";
 }
